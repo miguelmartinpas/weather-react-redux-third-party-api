@@ -1,0 +1,33 @@
+{
+  "extends": "airbnb/base",
+  "globals": {
+    "angular": true,
+    "inject": true,
+    "REGISTRY_URI": true,
+    "IDENTITY_URI": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true
+  },
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "max-len": [1, 150],
+    "no-confusing-arrow": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "class-methods-use-this": [0]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  }
+}
